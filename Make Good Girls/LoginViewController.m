@@ -1,23 +1,24 @@
 //
-//  MainViewController.m
+//  LoginViewController.m
 //  Make Good Girls
 //
 //  Created by Carlos Bedoy on 01/04/14.
 //  Copyright (c) 2014 Carlos Bedoy. All rights reserved.
 //
 
-#import "MainViewController.h"
+#import "LoginViewController.h"
 
-@interface MainViewController ()
+@interface LoginViewController ()
 
 @end
 
-@implementation MainViewController
+@implementation LoginViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
+        // Custom initialization
     }
     return self;
 }

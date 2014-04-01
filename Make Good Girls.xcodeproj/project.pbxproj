@@ -21,6 +21,8 @@
 		834CC07618EA935D00F2240E /* Make_Good_GirlsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 834CC07518EA935D00F2240E /* Make_Good_GirlsTests.m */; };
 		834CC08218EA93A000F2240E /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 834CC08018EA93A000F2240E /* MainViewController.m */; };
 		834CC08318EA93A000F2240E /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 834CC08118EA93A000F2240E /* MainViewController.xib */; };
+		834CC08718EA93EC00F2240E /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 834CC08518EA93EC00F2240E /* LoginViewController.m */; };
+		834CC08818EA93EC00F2240E /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 834CC08618EA93EC00F2240E /* LoginViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,9 @@
 		834CC07F18EA93A000F2240E /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		834CC08018EA93A000F2240E /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		834CC08118EA93A000F2240E /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		834CC08418EA93EC00F2240E /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		834CC08518EA93EC00F2240E /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		834CC08618EA93EC00F2240E /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,13 +117,12 @@
 		834CC05618EA935D00F2240E /* Make Good Girls */ = {
 			isa = PBXGroup;
 			children = (
+				834CC08C18EA942000F2240E /* Services */,
+				834CC08B18EA940900F2240E /* ViewController */,
 				834CC05F18EA935D00F2240E /* AppDelegate.h */,
 				834CC06018EA935D00F2240E /* AppDelegate.m */,
 				834CC06218EA935D00F2240E /* Images.xcassets */,
 				834CC05718EA935D00F2240E /* Supporting Files */,
-				834CC07F18EA93A000F2240E /* MainViewController.h */,
-				834CC08018EA93A000F2240E /* MainViewController.m */,
-				834CC08118EA93A000F2240E /* MainViewController.xib */,
 			);
 			path = "Make Good Girls";
 			sourceTree = "<group>";
@@ -150,6 +154,42 @@
 				834CC07218EA935D00F2240E /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		834CC08918EA93F200F2240E /* LoginViewController */ = {
+			isa = PBXGroup;
+			children = (
+				834CC08418EA93EC00F2240E /* LoginViewController.h */,
+				834CC08518EA93EC00F2240E /* LoginViewController.m */,
+				834CC08618EA93EC00F2240E /* LoginViewController.xib */,
+			);
+			name = LoginViewController;
+			sourceTree = "<group>";
+		};
+		834CC08A18EA93FD00F2240E /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				834CC07F18EA93A000F2240E /* MainViewController.h */,
+				834CC08018EA93A000F2240E /* MainViewController.m */,
+				834CC08118EA93A000F2240E /* MainViewController.xib */,
+			);
+			name = MainViewController;
+			sourceTree = "<group>";
+		};
+		834CC08B18EA940900F2240E /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				834CC08A18EA93FD00F2240E /* MainViewController */,
+				834CC08918EA93F200F2240E /* LoginViewController */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		834CC08C18EA942000F2240E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,6 +267,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				834CC08818EA93EC00F2240E /* LoginViewController.xib in Resources */,
 				834CC05B18EA935D00F2240E /* InfoPlist.strings in Resources */,
 				834CC08318EA93A000F2240E /* MainViewController.xib in Resources */,
 				834CC06318EA935D00F2240E /* Images.xcassets in Resources */,
@@ -248,6 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				834CC08718EA93EC00F2240E /* LoginViewController.m in Sources */,
 				834CC06118EA935D00F2240E /* AppDelegate.m in Sources */,
 				834CC08218EA93A000F2240E /* MainViewController.m in Sources */,
 				834CC05D18EA935D00F2240E /* main.m in Sources */,
