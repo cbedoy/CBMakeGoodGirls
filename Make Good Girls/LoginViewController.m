@@ -30,10 +30,24 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self.username      setTag:1];
+    [self.password      setTag:2];
+    [self.otherField    setTag:3];
+    [self.username      setDelegate:self];
+    [self.password      setDelegate:self];
+    [self.otherField    setDelegate:self];
 }
 
 
 -(IBAction)actionEnter:(id)sender{
+    
+}
+
+-(void)textFieldDidBeginEditing:(UITextField *)textField{
+    
+}
+
+-(void)textFieldDidEndEditing:(UITextField *)textField{
     
 }
 
