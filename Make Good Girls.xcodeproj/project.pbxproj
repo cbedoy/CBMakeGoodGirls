@@ -19,6 +19,8 @@
 		834CC06C18EA935D00F2240E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 834CC05418EA935D00F2240E /* UIKit.framework */; };
 		834CC07418EA935D00F2240E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 834CC07218EA935D00F2240E /* InfoPlist.strings */; };
 		834CC07618EA935D00F2240E /* Make_Good_GirlsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 834CC07518EA935D00F2240E /* Make_Good_GirlsTests.m */; };
+		834CC08218EA93A000F2240E /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 834CC08018EA93A000F2240E /* MainViewController.m */; };
+		834CC08318EA93A000F2240E /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 834CC08118EA93A000F2240E /* MainViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,9 @@
 		834CC07118EA935D00F2240E /* Make Good GirlsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Make Good GirlsTests-Info.plist"; sourceTree = "<group>"; };
 		834CC07318EA935D00F2240E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		834CC07518EA935D00F2240E /* Make_Good_GirlsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Make_Good_GirlsTests.m; sourceTree = "<group>"; };
+		834CC07F18EA93A000F2240E /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		834CC08018EA93A000F2240E /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		834CC08118EA93A000F2240E /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +116,9 @@
 				834CC06018EA935D00F2240E /* AppDelegate.m */,
 				834CC06218EA935D00F2240E /* Images.xcassets */,
 				834CC05718EA935D00F2240E /* Supporting Files */,
+				834CC07F18EA93A000F2240E /* MainViewController.h */,
+				834CC08018EA93A000F2240E /* MainViewController.m */,
+				834CC08118EA93A000F2240E /* MainViewController.xib */,
 			);
 			path = "Make Good Girls";
 			sourceTree = "<group>";
@@ -220,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				834CC05B18EA935D00F2240E /* InfoPlist.strings in Resources */,
+				834CC08318EA93A000F2240E /* MainViewController.xib in Resources */,
 				834CC06318EA935D00F2240E /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,6 +249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				834CC06118EA935D00F2240E /* AppDelegate.m in Sources */,
+				834CC08218EA93A000F2240E /* MainViewController.m in Sources */,
 				834CC05D18EA935D00F2240E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
