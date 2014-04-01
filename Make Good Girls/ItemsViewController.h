@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ItemsViewController : UITableViewController
+@interface ItemsViewController : UITableViewController<UITableViewDelegate, UITableViewDataSource>
+
+@property (nonatomic, retain) IBOutlet UITableView *tableView;
 
 @end
