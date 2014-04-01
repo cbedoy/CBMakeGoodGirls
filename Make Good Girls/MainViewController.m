@@ -44,6 +44,9 @@
     
 }
 
+- (IBAction)actionSearch:(id)sender {
+    [self.delegate changeView:@"itemsViewController"];
+}
 
 
 

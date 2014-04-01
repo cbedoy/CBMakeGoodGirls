@@ -37,7 +37,14 @@
                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </textAttributes>
                     <items>
-                        <navigationItem title="Home" id="Y9G-c3-DBv"/>
+                        <navigationItem title="Home" id="Y9G-c3-DBv">
+                            <barButtonItem key="rightBarButtonItem" systemItem="search" id="w9v-cI-5eO">
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="actionSearch:" destination="-1" id="CUQ-vy-7q4"/>
+                                </connections>
+                            </barButtonItem>
+                        </navigationItem>
                     </items>
                 </navigationBar>
                 <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="gSS-Rm-Y20">

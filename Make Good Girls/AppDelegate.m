@@ -10,6 +10,7 @@
 #import "MainViewController.h"
 #import "LoginViewController.h"
 #import "ManagerViewController.h"
+#import "ItemsViewController.h"
 
 @implementation AppDelegate
 
@@ -30,12 +31,14 @@
     id manager =                [[ManagerViewController alloc]init];
     id loginViewController =    [[LoginViewController alloc]init];
     id mainViewController =     [[MainViewController alloc]init];
+    id itemsViewController =    [[ItemsViewController alloc]init];
     
     [loginViewController        setDelegate:manager];
     [mainViewController         setDelegate:manager];
     
     [instances setValue:loginViewController     forKey:@"loginViewController"];
     [instances setValue:mainViewController      forKey:@"mainViewController"];
+    [instances setValue:itemsViewController     forKey:@"itemsViewController"];
     
     
     [manager setViewModel: instances];

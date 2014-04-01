@@ -10,6 +10,6 @@
 
 @interface ItemsViewController : UITableViewController<UITableViewDelegate, UITableViewDataSource>
 
-@property (nonatomic, retain) IBOutlet UITableView *tableView;
+
 
 @end
