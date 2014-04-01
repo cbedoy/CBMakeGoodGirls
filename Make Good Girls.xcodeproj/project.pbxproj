@@ -23,6 +23,7 @@
 		834CC08318EA93A000F2240E /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 834CC08118EA93A000F2240E /* MainViewController.xib */; };
 		834CC08718EA93EC00F2240E /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 834CC08518EA93EC00F2240E /* LoginViewController.m */; };
 		834CC08818EA93EC00F2240E /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 834CC08618EA93EC00F2240E /* LoginViewController.xib */; };
+		834CC08E18EA99FA00F2240E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 834CC08D18EA99FA00F2240E /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		834CC08418EA93EC00F2240E /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		834CC08518EA93EC00F2240E /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		834CC08618EA93EC00F2240E /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		834CC08D18EA99FA00F2240E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 			files = (
 				834CC05318EA935D00F2240E /* CoreGraphics.framework in Frameworks */,
 				834CC05518EA935D00F2240E /* UIKit.framework in Frameworks */,
+				834CC08E18EA99FA00F2240E /* MapKit.framework in Frameworks */,
 				834CC05118EA935D00F2240E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -106,6 +109,7 @@
 		834CC04F18EA935D00F2240E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				834CC08D18EA99FA00F2240E /* MapKit.framework */,
 				834CC05018EA935D00F2240E /* Foundation.framework */,
 				834CC05218EA935D00F2240E /* CoreGraphics.framework */,
 				834CC05418EA935D00F2240E /* UIKit.framework */,
@@ -239,6 +243,13 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Carlos Bedoy";
 				TargetAttributes = {
+					834CC04C18EA935D00F2240E = {
+						SystemCapabilities = {
+							com.apple.iOS = {
+								enabled = 1;
+							};
+						};
+					};
 					834CC06718EA935D00F2240E = {
 						TestTargetID = 834CC04C18EA935D00F2240E;
 					};
