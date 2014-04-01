@@ -63,6 +63,7 @@
 		834CC08D18EA99FA00F2240E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		834CC08F18EA9AA000F2240E /* ManagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManagerViewController.h; sourceTree = "<group>"; };
 		834CC09018EA9AA000F2240E /* ManagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManagerViewController.m; sourceTree = "<group>"; };
+		834CC09418EAA02B00F2240E /* IManagerViewDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IManagerViewDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,6 +214,7 @@
 		834CC09318EA9FE200F2240E /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				834CC09418EAA02B00F2240E /* IManagerViewDelegate.h */,
 			);
 			name = Protocols;
 			sourceTree = "<group>";
