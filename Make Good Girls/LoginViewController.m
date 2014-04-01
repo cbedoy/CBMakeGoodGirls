@@ -41,6 +41,7 @@
 
 -(IBAction)actionEnter:(id)sender{
     
+    [self.delegate changeView:@"mainViewController"];
 }
 
 -(void)textFieldDidBeginEditing:(UITextField *)textField{

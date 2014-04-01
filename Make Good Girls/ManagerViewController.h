@@ -10,6 +10,6 @@
 #import "IManagerViewDelegate.h"
 @interface ManagerViewController : UIViewController<IManagerViewDelegate>
 
--(id)initWithData:(id)data;
+
 
 @end

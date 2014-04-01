@@ -125,6 +125,7 @@
 		834CC05618EA935D00F2240E /* Make Good Girls */ = {
 			isa = PBXGroup;
 			children = (
+				834CC08B18EA940900F2240E /* ViewController */,
 				834CC08C18EA942000F2240E /* Services */,
 				834CC05F18EA935D00F2240E /* AppDelegate.h */,
 				834CC06018EA935D00F2240E /* AppDelegate.m */,
@@ -197,7 +198,6 @@
 		834CC08C18EA942000F2240E /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				834CC08B18EA940900F2240E /* ViewController */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -528,6 +528,7 @@
 				834CC07B18EA935D00F2240E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		834CC07C18EA935D00F2240E /* Build configuration list for PBXNativeTarget "Make Good GirlsTests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +537,7 @@
 				834CC07E18EA935D00F2240E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

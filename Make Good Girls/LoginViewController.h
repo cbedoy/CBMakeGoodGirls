@@ -10,8 +10,8 @@
 #import "IManagerViewDelegate.h"
 @interface LoginViewController : UIViewController <UITextFieldDelegate>
 
-@property (nonatomic, retain) id<IManagerViewDelegate> delegate;
-@property (nonatomic, retain) id viewModel;
-@property (nonatomic, retain) id dataModel;
+@property (nonatomic, retain) id<IManagerViewDelegate>  delegate;
+@property (nonatomic, retain) id                        viewModel;
+@property (nonatomic, retain) id                        dataModel;
 
 @end
