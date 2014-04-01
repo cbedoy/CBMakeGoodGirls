@@ -24,6 +24,7 @@
 		834CC08718EA93EC00F2240E /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 834CC08518EA93EC00F2240E /* LoginViewController.m */; };
 		834CC08818EA93EC00F2240E /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 834CC08618EA93EC00F2240E /* LoginViewController.xib */; };
 		834CC08E18EA99FA00F2240E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 834CC08D18EA99FA00F2240E /* MapKit.framework */; };
+		834CC09118EA9AA000F2240E /* ManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 834CC09018EA9AA000F2240E /* ManagerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		834CC08518EA93EC00F2240E /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		834CC08618EA93EC00F2240E /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		834CC08D18EA99FA00F2240E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		834CC08F18EA9AA000F2240E /* ManagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManagerViewController.h; sourceTree = "<group>"; };
+		834CC09018EA9AA000F2240E /* ManagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManagerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +188,7 @@
 			children = (
 				834CC08A18EA93FD00F2240E /* MainViewController */,
 				834CC08918EA93F200F2240E /* LoginViewController */,
+				834CC09218EA9AA400F2240E /* ManagerViewController */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -194,6 +198,15 @@
 			children = (
 			);
 			name = Services;
+			sourceTree = "<group>";
+		};
+		834CC09218EA9AA400F2240E /* ManagerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				834CC08F18EA9AA000F2240E /* ManagerViewController.h */,
+				834CC09018EA9AA000F2240E /* ManagerViewController.m */,
+			);
+			name = ManagerViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -304,6 +317,7 @@
 				834CC06118EA935D00F2240E /* AppDelegate.m in Sources */,
 				834CC08218EA93A000F2240E /* MainViewController.m in Sources */,
 				834CC05D18EA935D00F2240E /* main.m in Sources */,
+				834CC09118EA9AA000F2240E /* ManagerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
