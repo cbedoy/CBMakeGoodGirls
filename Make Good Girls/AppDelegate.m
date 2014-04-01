@@ -18,8 +18,8 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
     
-    ManagerViewController *manager = [ManagerViewController alloc]init
-    
+    ManagerViewController *manager = [[ManagerViewController alloc]initWithData:[self createInstances]];
+    [self.window setRootViewController:manager];
     [self.window makeKeyAndVisible];
     return YES;
 }

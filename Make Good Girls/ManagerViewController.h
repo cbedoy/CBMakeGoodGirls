@@ -10,6 +10,6 @@
 
 @interface ManagerViewController : UIViewController
 
-
+-(id)initWithData:(id)data;
 
 @end
