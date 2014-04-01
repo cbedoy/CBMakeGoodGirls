@@ -29,7 +29,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	
+    
+    [self.view addSubview:[self.viewModel valueForKey:@"loginViewController"]];
 }
 
 
