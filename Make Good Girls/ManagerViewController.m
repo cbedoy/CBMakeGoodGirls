@@ -16,26 +16,24 @@
 
 @implementation ManagerViewController
 
-
-
--(id)initWithData:(id)data{
+- (id)init
+{
     self = [super init];
     if (self) {
-        self.viewModel = data;
+        
     }
     return self;
 }
 
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    
     [self.view addSubview:[[self.viewModel valueForKey:@"loginViewController"] view]];
 }
 
--(void)changeView:(id)view{
-    
+-(void)changeView:(id)controllerName{
+    [self.view addSubview:[[self.viewModel valueForKey:controllerName] view]];
 }
 
 

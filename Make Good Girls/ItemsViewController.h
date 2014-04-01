@@ -1,5 +1,5 @@
 //
-//  ManagerViewController.h
+//  ItemsViewController.h
 //  Make Good Girls
 //
 //  Created by Carlos Bedoy on 01/04/14.
@@ -7,9 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "IManagerViewDelegate.h"
-@interface ManagerViewController : UIViewController<IManagerViewDelegate>
 
-
+@interface ItemsViewController : UITableViewController
 
 @end

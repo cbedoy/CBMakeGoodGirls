@@ -18,7 +18,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
     
-    ManagerViewController *manager = [[ManagerViewController alloc]initWithData:[self createInstances]];
+    ManagerViewController *manager = [self createInstances];
     [self.window setRootViewController:manager];
     [self.window makeKeyAndVisible];
     return YES;
@@ -27,12 +27,20 @@
 -(id)createInstances{
     id instances = [NSMutableDictionary new];
     
-    id loginViewController = [[LoginViewController alloc]init];
-    id mainViewController = [[MainViewController alloc]init];
+    id manager =                [[ManagerViewController alloc]init];
+    id loginViewController =    [[LoginViewController alloc]init];
+    id mainViewController =     [[MainViewController alloc]init];
+    
+    [loginViewController        setDelegate:manager];
+    [mainViewController         setDelegate:manager];
     
     [instances setValue:loginViewController     forKey:@"loginViewController"];
     [instances setValue:mainViewController      forKey:@"mainViewController"];
-    return instances;
+    
+    
+    [manager setViewModel: instances];
+    
+    return manager;
 }
 
 @end

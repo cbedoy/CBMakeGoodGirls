@@ -25,6 +25,10 @@
 		834CC08818EA93EC00F2240E /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 834CC08618EA93EC00F2240E /* LoginViewController.xib */; };
 		834CC08E18EA99FA00F2240E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 834CC08D18EA99FA00F2240E /* MapKit.framework */; };
 		834CC09118EA9AA000F2240E /* ManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 834CC09018EA9AA000F2240E /* ManagerViewController.m */; };
+		834CC09818EAA65600F2240E /* ItemsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 834CC09618EAA65600F2240E /* ItemsViewController.m */; };
+		834CC09918EAA65600F2240E /* ItemsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 834CC09718EAA65600F2240E /* ItemsViewController.xib */; };
+		834CC09E18EAA6B500F2240E /* ItemCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 834CC09D18EAA6B500F2240E /* ItemCellView.m */; };
+		834CC0A018EAA6DD00F2240E /* ItemCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 834CC09F18EAA6DD00F2240E /* ItemCellView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +68,12 @@
 		834CC08F18EA9AA000F2240E /* ManagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManagerViewController.h; sourceTree = "<group>"; };
 		834CC09018EA9AA000F2240E /* ManagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManagerViewController.m; sourceTree = "<group>"; };
 		834CC09418EAA02B00F2240E /* IManagerViewDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IManagerViewDelegate.h; sourceTree = "<group>"; };
+		834CC09518EAA65500F2240E /* ItemsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemsViewController.h; sourceTree = "<group>"; };
+		834CC09618EAA65600F2240E /* ItemsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemsViewController.m; sourceTree = "<group>"; };
+		834CC09718EAA65600F2240E /* ItemsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemsViewController.xib; sourceTree = "<group>"; };
+		834CC09C18EAA6B500F2240E /* ItemCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemCellView.h; sourceTree = "<group>"; };
+		834CC09D18EAA6B500F2240E /* ItemCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemCellView.m; sourceTree = "<group>"; };
+		834CC09F18EAA6DD00F2240E /* ItemCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemCellView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +135,7 @@
 		834CC05618EA935D00F2240E /* Make Good Girls */ = {
 			isa = PBXGroup;
 			children = (
+				834CC08B18EA940900F2240E /* ViewController */,
 				834CC08C18EA942000F2240E /* Services */,
 				834CC05F18EA935D00F2240E /* AppDelegate.h */,
 				834CC06018EA935D00F2240E /* AppDelegate.m */,
@@ -190,6 +201,7 @@
 				834CC08A18EA93FD00F2240E /* MainViewController */,
 				834CC08918EA93F200F2240E /* LoginViewController */,
 				834CC09218EA9AA400F2240E /* ManagerViewController */,
+				834CC09A18EAA65E00F2240E /* ItemsViewController */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -197,7 +209,6 @@
 		834CC08C18EA942000F2240E /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				834CC08B18EA940900F2240E /* ViewController */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -217,6 +228,27 @@
 				834CC09418EAA02B00F2240E /* IManagerViewDelegate.h */,
 			);
 			name = Protocols;
+			sourceTree = "<group>";
+		};
+		834CC09A18EAA65E00F2240E /* ItemsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				834CC09B18EAA67E00F2240E /* ItemCellView */,
+				834CC09518EAA65500F2240E /* ItemsViewController.h */,
+				834CC09618EAA65600F2240E /* ItemsViewController.m */,
+				834CC09718EAA65600F2240E /* ItemsViewController.xib */,
+			);
+			name = ItemsViewController;
+			sourceTree = "<group>";
+		};
+		834CC09B18EAA67E00F2240E /* ItemCellView */ = {
+			isa = PBXGroup;
+			children = (
+				834CC09C18EAA6B500F2240E /* ItemCellView.h */,
+				834CC09D18EAA6B500F2240E /* ItemCellView.m */,
+				834CC09F18EAA6DD00F2240E /* ItemCellView.xib */,
+			);
+			name = ItemCellView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,8 +334,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				834CC08818EA93EC00F2240E /* LoginViewController.xib in Resources */,
+				834CC0A018EAA6DD00F2240E /* ItemCellView.xib in Resources */,
 				834CC05B18EA935D00F2240E /* InfoPlist.strings in Resources */,
 				834CC08318EA93A000F2240E /* MainViewController.xib in Resources */,
+				834CC09918EAA65600F2240E /* ItemsViewController.xib in Resources */,
 				834CC06318EA935D00F2240E /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -326,8 +360,10 @@
 				834CC08718EA93EC00F2240E /* LoginViewController.m in Sources */,
 				834CC06118EA935D00F2240E /* AppDelegate.m in Sources */,
 				834CC08218EA93A000F2240E /* MainViewController.m in Sources */,
+				834CC09818EAA65600F2240E /* ItemsViewController.m in Sources */,
 				834CC05D18EA935D00F2240E /* main.m in Sources */,
 				834CC09118EA9AA000F2240E /* ManagerViewController.m in Sources */,
+				834CC09E18EAA6B500F2240E /* ItemCellView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -528,6 +564,7 @@
 				834CC07B18EA935D00F2240E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		834CC07C18EA935D00F2240E /* Build configuration list for PBXNativeTarget "Make Good GirlsTests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +573,7 @@
 				834CC07E18EA935D00F2240E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -10,6 +10,6 @@
 
 @protocol IManagerViewDelegate <NSObject>
 
--(void)changeView:(id)view;
+-(void)changeView:(id)controllerName;
 
 @end

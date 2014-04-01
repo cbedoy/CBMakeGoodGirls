@@ -18,11 +18,11 @@
 
 @implementation LoginViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+- (id)init
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    self = [super init];
     if (self) {
-
+        
     }
     return self;
 }
@@ -41,6 +41,7 @@
 
 -(IBAction)actionEnter:(id)sender{
     
+    [self.delegate changeView:@"mainViewController"];
 }
 
 -(void)textFieldDidBeginEditing:(UITextField *)textField{
