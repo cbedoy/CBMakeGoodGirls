@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface ManagerViewController : UIViewController
+#import "IManagerViewDelegate.h"
+@interface ManagerViewController : UIViewController<IManagerViewDelegate>
 
 -(id)initWithData:(id)data;
 

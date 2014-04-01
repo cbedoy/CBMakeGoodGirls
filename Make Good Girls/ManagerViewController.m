@@ -34,6 +34,10 @@
     [self.view addSubview:[[self.viewModel valueForKey:@"loginViewController"] view]];
 }
 
+-(void)changeView:(id)view{
+    
+}
+
 
 
 @end
