@@ -10,15 +10,18 @@
 
 @interface ManagerViewController ()
 
+@property (nonatomic, retain) id viewModel;
+
 @end
 
 @implementation ManagerViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+
+
+-(id)initWithData:(id)data{
+    self = [super init];
     if (self) {
-        // Custom initialization
+        self.viewModel = data;
     }
     return self;
 }
@@ -26,7 +29,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+	
 }
 
 

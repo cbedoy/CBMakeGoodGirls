@@ -7,7 +7,9 @@
 //
 
 #import "AppDelegate.h"
-#import ""
+#import "MainViewController.h"
+#import "LoginViewController.h"
+#import "ManagerViewController.h"
 
 @implementation AppDelegate
 
@@ -15,9 +17,23 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
+    
+    ManagerViewController *manager = [ManagerViewController alloc]init
+    
     [self.window makeKeyAndVisible];
     return YES;
 }
+
+-(id)createInstances{
+    id instances;
+    id loginViewController = [[LoginViewController alloc]init];
+    id mainViewController = [[MainViewController alloc]init];
+    
+    [instances setValue:loginViewController     forKey:@"loginViewController"];
+    [instances setValue:mainViewController      forKey:@"mainViewController"];
+    return instances;
+}
+
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {
