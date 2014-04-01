@@ -25,6 +25,8 @@
 		834CC08818EA93EC00F2240E /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 834CC08618EA93EC00F2240E /* LoginViewController.xib */; };
 		834CC08E18EA99FA00F2240E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 834CC08D18EA99FA00F2240E /* MapKit.framework */; };
 		834CC09118EA9AA000F2240E /* ManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 834CC09018EA9AA000F2240E /* ManagerViewController.m */; };
+		834CC09818EAA65600F2240E /* ItemsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 834CC09618EAA65600F2240E /* ItemsViewController.m */; };
+		834CC09918EAA65600F2240E /* ItemsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 834CC09718EAA65600F2240E /* ItemsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,9 @@
 		834CC08F18EA9AA000F2240E /* ManagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManagerViewController.h; sourceTree = "<group>"; };
 		834CC09018EA9AA000F2240E /* ManagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManagerViewController.m; sourceTree = "<group>"; };
 		834CC09418EAA02B00F2240E /* IManagerViewDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IManagerViewDelegate.h; sourceTree = "<group>"; };
+		834CC09518EAA65500F2240E /* ItemsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemsViewController.h; sourceTree = "<group>"; };
+		834CC09618EAA65600F2240E /* ItemsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemsViewController.m; sourceTree = "<group>"; };
+		834CC09718EAA65600F2240E /* ItemsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +196,7 @@
 				834CC08A18EA93FD00F2240E /* MainViewController */,
 				834CC08918EA93F200F2240E /* LoginViewController */,
 				834CC09218EA9AA400F2240E /* ManagerViewController */,
+				834CC09A18EAA65E00F2240E /* ItemsViewController */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -217,6 +223,24 @@
 				834CC09418EAA02B00F2240E /* IManagerViewDelegate.h */,
 			);
 			name = Protocols;
+			sourceTree = "<group>";
+		};
+		834CC09A18EAA65E00F2240E /* ItemsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				834CC09B18EAA67E00F2240E /* ItemCellView */,
+				834CC09518EAA65500F2240E /* ItemsViewController.h */,
+				834CC09618EAA65600F2240E /* ItemsViewController.m */,
+				834CC09718EAA65600F2240E /* ItemsViewController.xib */,
+			);
+			name = ItemsViewController;
+			sourceTree = "<group>";
+		};
+		834CC09B18EAA67E00F2240E /* ItemCellView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ItemCellView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -304,6 +328,7 @@
 				834CC08818EA93EC00F2240E /* LoginViewController.xib in Resources */,
 				834CC05B18EA935D00F2240E /* InfoPlist.strings in Resources */,
 				834CC08318EA93A000F2240E /* MainViewController.xib in Resources */,
+				834CC09918EAA65600F2240E /* ItemsViewController.xib in Resources */,
 				834CC06318EA935D00F2240E /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -326,6 +351,7 @@
 				834CC08718EA93EC00F2240E /* LoginViewController.m in Sources */,
 				834CC06118EA935D00F2240E /* AppDelegate.m in Sources */,
 				834CC08218EA93A000F2240E /* MainViewController.m in Sources */,
+				834CC09818EAA65600F2240E /* ItemsViewController.m in Sources */,
 				834CC05D18EA935D00F2240E /* main.m in Sources */,
 				834CC09118EA9AA000F2240E /* ManagerViewController.m in Sources */,
 			);
