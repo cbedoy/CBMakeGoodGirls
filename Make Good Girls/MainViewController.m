@@ -7,10 +7,10 @@
 //
 
 #import "MainViewController.h"
+#import <MapKit/MapKit.h>
+@interface MainViewController ()<MKMapViewDelegate>
 
-@interface MainViewController ()
-
-
+@property (nonatomic, retain) IBOutlet MKMapView *mapView;
 
 @end
 
@@ -27,6 +27,18 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+}
+
+-(void)mapViewWillStartLoadingMap:(MKMapView *)mapView{
+    
+}
+
+-(void)mapViewWillStartLocatingUser:(MKMapView *)mapView{
+    
+}
+
+-(void)mapViewWillStartRenderingMap:(MKMapView *)mapView{
     
 }
 
