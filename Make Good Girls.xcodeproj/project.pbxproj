@@ -125,7 +125,6 @@
 			isa = PBXGroup;
 			children = (
 				834CC08C18EA942000F2240E /* Services */,
-				834CC08B18EA940900F2240E /* ViewController */,
 				834CC05F18EA935D00F2240E /* AppDelegate.h */,
 				834CC06018EA935D00F2240E /* AppDelegate.m */,
 				834CC06218EA935D00F2240E /* Images.xcassets */,
@@ -186,6 +185,7 @@
 		834CC08B18EA940900F2240E /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				834CC09318EA9FE200F2240E /* Protocols */,
 				834CC08A18EA93FD00F2240E /* MainViewController */,
 				834CC08918EA93F200F2240E /* LoginViewController */,
 				834CC09218EA9AA400F2240E /* ManagerViewController */,
@@ -196,6 +196,7 @@
 		834CC08C18EA942000F2240E /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				834CC08B18EA940900F2240E /* ViewController */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -207,6 +208,13 @@
 				834CC09018EA9AA000F2240E /* ManagerViewController.m */,
 			);
 			name = ManagerViewController;
+			sourceTree = "<group>";
+		};
+		834CC09318EA9FE200F2240E /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

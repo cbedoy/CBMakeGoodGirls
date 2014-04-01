@@ -30,7 +30,8 @@
 {
     [super viewDidLoad];
     
-    [self.view addSubview:[self.viewModel valueForKey:@"loginViewController"]];
+    
+    [self.view addSubview:[[self.viewModel valueForKey:@"loginViewController"] view]];
 }
 
 

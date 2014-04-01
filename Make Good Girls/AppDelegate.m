@@ -25,7 +25,7 @@
 }
 
 -(id)createInstances{
-    id instances;
+    id instances = [NSMutableDictionary new];
     
     id loginViewController = [[LoginViewController alloc]init];
     id mainViewController = [[MainViewController alloc]init];
