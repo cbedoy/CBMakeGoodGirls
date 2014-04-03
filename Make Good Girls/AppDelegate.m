@@ -10,7 +10,7 @@
 #import "MainViewController.h"
 #import "LoginViewController.h"
 #import "ManagerViewController.h"
-#import "ItemsViewController.h"
+#import "ItemViewController.h"
 
 @implementation AppDelegate
 
@@ -31,7 +31,7 @@
     id manager =                [[ManagerViewController alloc]init];
     id loginViewController =    [[LoginViewController alloc]init];
     id mainViewController =     [[MainViewController alloc]init];
-    id itemsViewController =    [[ItemsViewController alloc]init];
+    id itemsViewController =    [[ItemViewController alloc]init];
     
     [loginViewController        setDelegate:manager];
     [mainViewController         setDelegate:manager];
