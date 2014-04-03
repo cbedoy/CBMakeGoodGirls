@@ -36,6 +36,7 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)actionCancel:(id)sender {
+    [self.delegate changeView:@"mainViewController"];
 }
 
 @end

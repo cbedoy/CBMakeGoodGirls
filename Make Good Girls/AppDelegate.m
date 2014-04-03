@@ -35,6 +35,7 @@
     
     [loginViewController        setDelegate:manager];
     [mainViewController         setDelegate:manager];
+    [itemsViewController        setDelegate:manager];
     
     [instances setValue:loginViewController     forKey:@"loginViewController"];
     [instances setValue:mainViewController      forKey:@"mainViewController"];
