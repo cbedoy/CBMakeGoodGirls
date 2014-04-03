@@ -64,6 +64,19 @@
     return cell;
 }
 
+
+-(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    return 44.0f;
+}
+
+-(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+    UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, self.tableView.frame.size.width, 44)];
+    UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(11, 11, self.tableView.frame.size.width, 22)];
+    [label setText:@"Choose an option:"];
+    [view addSubview:label];
+    return view;
+}
+
 /*
 #pragma mark - Table view delegate
 
