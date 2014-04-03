@@ -27,8 +27,8 @@
 		834CC09118EA9AA000F2240E /* ManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 834CC09018EA9AA000F2240E /* ManagerViewController.m */; };
 		834CC09E18EAA6B500F2240E /* ItemCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 834CC09D18EAA6B500F2240E /* ItemCellView.m */; };
 		834CC0A018EAA6DD00F2240E /* ItemCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 834CC09F18EAA6DD00F2240E /* ItemCellView.xib */; };
-		834CC0AE18EB10A200F2240E /* ItemsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 834CC0AC18EB10A200F2240E /* ItemsViewController.m */; };
-		834CC0AF18EB10A200F2240E /* ItemsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 834CC0AD18EB10A200F2240E /* ItemsViewController.xib */; };
+		83F8AA1F18EE2B6800648A6A /* ItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F8AA1D18EE2B6800648A6A /* ItemViewController.m */; };
+		83F8AA2018EE2B6800648A6A /* ItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83F8AA1E18EE2B6800648A6A /* ItemViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,9 +71,9 @@
 		834CC09C18EAA6B500F2240E /* ItemCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemCellView.h; sourceTree = "<group>"; };
 		834CC09D18EAA6B500F2240E /* ItemCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemCellView.m; sourceTree = "<group>"; };
 		834CC09F18EAA6DD00F2240E /* ItemCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemCellView.xib; sourceTree = "<group>"; };
-		834CC0AB18EB10A200F2240E /* ItemsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemsViewController.h; sourceTree = "<group>"; };
-		834CC0AC18EB10A200F2240E /* ItemsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemsViewController.m; sourceTree = "<group>"; };
-		834CC0AD18EB10A200F2240E /* ItemsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemsViewController.xib; sourceTree = "<group>"; };
+		83F8AA1C18EE2B6800648A6A /* ItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemViewController.h; sourceTree = "<group>"; };
+		83F8AA1D18EE2B6800648A6A /* ItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemViewController.m; sourceTree = "<group>"; };
+		83F8AA1E18EE2B6800648A6A /* ItemViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,9 +234,9 @@
 			isa = PBXGroup;
 			children = (
 				834CC09B18EAA67E00F2240E /* ItemCellView */,
-				834CC0AB18EB10A200F2240E /* ItemsViewController.h */,
-				834CC0AC18EB10A200F2240E /* ItemsViewController.m */,
-				834CC0AD18EB10A200F2240E /* ItemsViewController.xib */,
+				83F8AA1C18EE2B6800648A6A /* ItemViewController.h */,
+				83F8AA1D18EE2B6800648A6A /* ItemViewController.m */,
+				83F8AA1E18EE2B6800648A6A /* ItemViewController.xib */,
 			);
 			name = ItemsViewController;
 			sourceTree = "<group>";
@@ -334,7 +334,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				834CC08818EA93EC00F2240E /* LoginViewController.xib in Resources */,
-				834CC0AF18EB10A200F2240E /* ItemsViewController.xib in Resources */,
+				83F8AA2018EE2B6800648A6A /* ItemViewController.xib in Resources */,
 				834CC0A018EAA6DD00F2240E /* ItemCellView.xib in Resources */,
 				834CC05B18EA935D00F2240E /* InfoPlist.strings in Resources */,
 				834CC08318EA93A000F2240E /* MainViewController.xib in Resources */,
@@ -359,8 +359,8 @@
 			files = (
 				834CC08718EA93EC00F2240E /* LoginViewController.m in Sources */,
 				834CC06118EA935D00F2240E /* AppDelegate.m in Sources */,
-				834CC0AE18EB10A200F2240E /* ItemsViewController.m in Sources */,
 				834CC08218EA93A000F2240E /* MainViewController.m in Sources */,
+				83F8AA1F18EE2B6800648A6A /* ItemViewController.m in Sources */,
 				834CC05D18EA935D00F2240E /* main.m in Sources */,
 				834CC09118EA9AA000F2240E /* ManagerViewController.m in Sources */,
 				834CC09E18EAA6B500F2240E /* ItemCellView.m in Sources */,
