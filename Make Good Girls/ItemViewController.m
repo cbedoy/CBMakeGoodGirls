@@ -50,7 +50,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     
-    return 10;
+    return 4;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -63,14 +63,9 @@
         
     }
     
-    //NSUInteger row = (NSUInteger) indexPath.row;
-    //id currentItems = self.viewModel[@"viewModel"][@"items"];
-    
-    //id cellViewModel = currentItems[row];
-    
-    [cell setViewModel:nil];
-    
-    
+    NSUInteger row = (NSUInteger) indexPath.row;
+    [cell setViewModel:self.dataModel[row]];
+
     return cell;
 }
 

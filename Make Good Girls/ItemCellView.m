@@ -11,7 +11,8 @@
 @implementation ItemCellView
 
 -(void)setViewModel:(id)viewModel{
-    [self.name setText:@"Value"];
+    [self.name      setText:[viewModel  valueForKey:@"name"]];
+    [self.address   setText:[viewModel  valueForKey:@"address"]];
 }
 
 @end

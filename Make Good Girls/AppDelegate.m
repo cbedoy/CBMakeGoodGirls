@@ -56,6 +56,54 @@
                      @"latitud":    @10,
                      @"longitud":   @10
                      },
+                 @{
+                     @"name":       @"Ana karen",
+                     @"address":    @"Some address",
+                     @"latitud":    @10,
+                     @"longitud":   @10
+                     },
+                 @{
+                     @"name":       @"Fridda",
+                     @"address":    @"Some address",
+                     @"latitud":    @10,
+                     @"longitud":   @10
+                     },
+                 @{
+                     @"name":       @"Esmeralda",
+                     @"address":    @"Some address",
+                     @"latitud":    @10,
+                     @"longitud":   @10
+                     },
+                 @{
+                     @"name":       @"Karina",
+                     @"address":    @"Some address",
+                     @"latitud":    @10,
+                     @"longitud":   @10
+                     },
+                 @{
+                     @"name":       @"Dulce",
+                     @"address":    @"Some address",
+                     @"latitud":    @10,
+                     @"longitud":   @10
+                     },
+                 @{
+                     @"name":       @"Sandra",
+                     @"address":    @"Some address",
+                     @"latitud":    @10,
+                     @"longitud":   @10
+                     },
+                 @{
+                     @"name":       @"Claudia",
+                     @"address":    @"Some address",
+                     @"latitud":    @10,
+                     @"longitud":   @10
+                     },
+                 @{
+                     @"name":       @"Alejandra",
+                     @"address":    @"Some address",
+                     @"latitud":    @10,
+                     @"longitud":   @10
+                     },
                  
                  ];
     
@@ -70,6 +118,9 @@
     [loginViewController        setDelegate:manager];
     [mainViewController         setDelegate:manager];
     [itemsViewController        setDelegate:manager];
+    
+    
+    [itemsViewController setDataModel:dataModel];
     
     [instances setValue:loginViewController     forKey:@"loginViewController"];
     [instances setValue:mainViewController      forKey:@"mainViewController"];

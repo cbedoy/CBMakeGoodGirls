@@ -42,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		833FBC5E18EE36F200160E46 /* IMainViewControllerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IMainViewControllerDelegate.h; sourceTree = "<group>"; };
 		834CC04D18EA935D00F2240E /* Make Good Girls.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Make Good Girls.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		834CC05018EA935D00F2240E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		834CC05218EA935D00F2240E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -226,6 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				834CC09418EAA02B00F2240E /* IManagerViewDelegate.h */,
+				833FBC5E18EE36F200160E46 /* IMainViewControllerDelegate.h */,
 			);
 			name = Protocols;
 			sourceTree = "<group>";
