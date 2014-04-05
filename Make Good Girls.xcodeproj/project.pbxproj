@@ -27,6 +27,7 @@
 		834CC09118EA9AA000F2240E /* ManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 834CC09018EA9AA000F2240E /* ManagerViewController.m */; };
 		834CC09E18EAA6B500F2240E /* ItemCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 834CC09D18EAA6B500F2240E /* ItemCellView.m */; };
 		834CC0A018EAA6DD00F2240E /* ItemCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 834CC09F18EAA6DD00F2240E /* ItemCellView.xib */; };
+		83B6C7B718EF731D0085FEA7 /* bricks_00400861.png in Resources */ = {isa = PBXBuildFile; fileRef = 83B6C7B618EF731D0085FEA7 /* bricks_00400861.png */; };
 		83F8AA1F18EE2B6800648A6A /* ItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F8AA1D18EE2B6800648A6A /* ItemViewController.m */; };
 		83F8AA2018EE2B6800648A6A /* ItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83F8AA1E18EE2B6800648A6A /* ItemViewController.xib */; };
 /* End PBXBuildFile section */
@@ -72,6 +73,7 @@
 		834CC09C18EAA6B500F2240E /* ItemCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemCellView.h; sourceTree = "<group>"; };
 		834CC09D18EAA6B500F2240E /* ItemCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemCellView.m; sourceTree = "<group>"; };
 		834CC09F18EAA6DD00F2240E /* ItemCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemCellView.xib; sourceTree = "<group>"; };
+		83B6C7B618EF731D0085FEA7 /* bricks_00400861.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bricks_00400861.png; sourceTree = "<group>"; };
 		83F8AA1C18EE2B6800648A6A /* ItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemViewController.h; sourceTree = "<group>"; };
 		83F8AA1D18EE2B6800648A6A /* ItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemViewController.m; sourceTree = "<group>"; };
 		83F8AA1E18EE2B6800648A6A /* ItemViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemViewController.xib; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 		834CC05618EA935D00F2240E /* Make Good Girls */ = {
 			isa = PBXGroup;
 			children = (
+				83B6C7B618EF731D0085FEA7 /* bricks_00400861.png */,
 				834CC08B18EA940900F2240E /* ViewController */,
 				834CC08C18EA942000F2240E /* Services */,
 				834CC05F18EA935D00F2240E /* AppDelegate.h */,
@@ -336,6 +339,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				834CC08818EA93EC00F2240E /* LoginViewController.xib in Resources */,
+				83B6C7B718EF731D0085FEA7 /* bricks_00400861.png in Resources */,
 				83F8AA2018EE2B6800648A6A /* ItemViewController.xib in Resources */,
 				834CC0A018EAA6DD00F2240E /* ItemCellView.xib in Resources */,
 				834CC05B18EA935D00F2240E /* InfoPlist.strings in Resources */,
@@ -484,6 +488,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Make Good Girls/Make Good Girls-Prefix.pch";
 				INFOPLIST_FILE = "Make Good Girls/Make Good Girls-Info.plist";
@@ -497,6 +502,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Make Good Girls/Make Good Girls-Prefix.pch";
 				INFOPLIST_FILE = "Make Good Girls/Make Good Girls-Info.plist";
@@ -510,6 +516,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Make Good Girls.app/Make Good Girls";
+				CLANG_ENABLE_OBJC_ARC = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -533,6 +540,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Make Good Girls.app/Make Good Girls";
+				CLANG_ENABLE_OBJC_ARC = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",

@@ -52,6 +52,9 @@
 - (IBAction)actionSearch:(id)sender {
     [self.delegate changeView:@"itemsViewController"];
 }
+- (IBAction)actionBack:(id)sender {
+    [self.delegate changeView:@"loginViewController"];
+}
 
 
 
