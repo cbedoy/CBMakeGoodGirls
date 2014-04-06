@@ -34,6 +34,10 @@
 }
 
 -(void)viewDidAppear:(BOOL)animated{
+
+}
+
+-(void)viewWillAppear:(BOOL)animated{
     
 }
 
@@ -46,7 +50,7 @@
 }
 
 -(void)mapViewWillStartRenderingMap:(MKMapView *)mapView{
-    
+    [self loadBitches];
 }
 
 - (IBAction)actionSearch:(id)sender {
@@ -56,6 +60,17 @@
     [self.delegate changeView:@"loginViewController"];
 }
 
-
+-(void)loadBitches
+{
+    for (id bitch in self.dataModel) {
+        MKPointAnnotation *myAnnotation = [[MKPointAnnotation alloc] init];
+        myAnnotation.coordinate = CLLocationCoordinate2DMake(
+                                                            [[self.dataModel valueForKey:@"latitud"] floatValue],
+                                                            [[self.dataModel valueForKey:@"longitud"] floatValue]);
+        myAnnotation.title = [self.dataModel valueForKey:@"name"];
+        myAnnotation.subtitle = [self.dataModel valueForKey:@"address"];
+        [self.mapView addAnnotation:myAnnotation];
+    }
+}
 
 @end

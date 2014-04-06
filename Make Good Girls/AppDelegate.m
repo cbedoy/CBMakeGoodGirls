@@ -120,7 +120,8 @@
     [itemsViewController        setDelegate:manager];
     
     
-    [itemsViewController setDataModel:dataModel];
+    [itemsViewController        setDataModel:dataModel];
+    [mainViewController         setDataModel:dataModel];
     
     [instances setValue:loginViewController     forKey:@"loginViewController"];
     [instances setValue:mainViewController      forKey:@"mainViewController"];
