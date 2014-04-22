@@ -1,0 +1,5 @@
+#include "Pods-Make Good Girls-MAKVONotificationCenter.xcconfig"
+GCC_PREPROCESSOR_DEFINITIONS = COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/BuildHeaders" "${PODS_ROOT}/BuildHeaders/MAKVONotificationCenter" "${PODS_ROOT}/BuildHeaders/MAKVONotificationCenter/MAKVONotificationCenter" "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/MAKVONotificationCenter" "${PODS_ROOT}/Headers/MAKVONotificationCenter/MAKVONotificationCenter"
+OTHER_LDFLAGS = -ObjC
+PODS_ROOT = ${SRCROOT}
