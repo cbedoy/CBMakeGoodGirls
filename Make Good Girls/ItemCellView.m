@@ -7,12 +7,27 @@
 //
 
 #import "ItemCellView.h"
-
+#import "MAKVONotificationCenter.h"
 @implementation ItemCellView
 
--(void)setViewModel:(id)viewModel{
-    [self.name      setText:[viewModel  valueForKey:@"name"]];
-    [self.address   setText:[viewModel  valueForKey:@"address"]];
+-(void)awakeFromNib{
+    [self assingObserver];
 }
+
+-(void)assingObserver{
+    NSKeyValueObservingOptions options = NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld;
+    void (^viewModelBlock)(MAKVONotification *) = ^(MAKVONotification *notification)
+    {
+        [self reloadData];
+    };
+    [self addObservationKeyPath:@"viewModel" options:options block:viewModelBlock];
+}
+
+-(void)reloadData{
+    [self.name      setText:[self.viewModel  valueForKey:@"name"]];
+    [self.address   setText:[self.viewModel  valueForKey:@"address"]];
+}
+
+
 
 @end

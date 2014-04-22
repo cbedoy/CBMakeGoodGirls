@@ -10,6 +10,7 @@
 #import "ItemCellView.h"
 
 @interface ItemViewController ()<UITableViewDataSource, UITableViewDelegate>
+
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
 
 @end

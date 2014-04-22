@@ -41,14 +41,6 @@
     
 }
 
--(void)mapViewWillStartLoadingMap:(MKMapView *)mapView{
-    
-}
-
--(void)mapViewWillStartLocatingUser:(MKMapView *)mapView{
-    
-}
-
 -(void)mapViewWillStartRenderingMap:(MKMapView *)mapView{
     [self loadBitches];
 }
@@ -62,7 +54,7 @@
 
 -(void)loadBitches
 {
-    for (id bitch in self.dataModel) {
+    /*for (id bitch in self.dataModel) {
         MKPointAnnotation *myAnnotation = [[MKPointAnnotation alloc] init];
         myAnnotation.coordinate = CLLocationCoordinate2DMake(
                                                             [[self.dataModel valueForKey:@"latitud"] floatValue],
@@ -70,7 +62,7 @@
         myAnnotation.title = [self.dataModel valueForKey:@"name"];
         myAnnotation.subtitle = [self.dataModel valueForKey:@"address"];
         [self.mapView addAnnotation:myAnnotation];
-    }
+    }*/
 }
 
 @end
